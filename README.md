@@ -70,14 +70,14 @@ We can use the **CallBacks** feature in Keras which saves the weights of a model
 ### Building and training models
 I proceeded to build the **CNN** models from scratch. I added the usual components like convolution, max pooling, and dense layers. We build a model similar to the **AlexNet**.
 
-![Test data](basic_model_aug\\basic_distraction_model_aug.png)
+![Test data](basic_model_aug/basic_distraction_model_aug.png)
 
 The results were outstanding with a loss around **0.014** and accuracy around **99.6%** on the validation set in just **5** epochs.
 
 Well, this is just too good to be true so contemplated for a second about accidentally building the best CNN architecture 
 the world has ever seen. So, we predicted the classes for the unlabeled test set using this model.
 
-![Test data](basic_model_aug\\basic_model_test_samples.png)
+![Test data](basic_model_aug/basic_model_test_samples.png)
 
 So, we looked deeper into what could have gone wrong and we found that our training data has multiple images of the same person within a class with slight changes of angle and/or shifts in height or width.
 
@@ -111,7 +111,7 @@ Now after **10** epochs we achieve accuracy of **37.4%** which is accepted as au
 
 Here we use augmentation techniques like: shearing, zooming, and horizontal flip.
 
-![Image augmentation](basic_model_aug\\data_augmentation.png "Image augmentation")
+![Image augmentation](basic_model_aug/data_augmentation.png "Image augmentation")
 
 **Transfer learning**
 
